@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Verdana', sans-serif;
+}
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #7955cc, #c250c1);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn{
+    margin: 10px 5px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.btn-primary{
+    background: #7955cc;
+}
+.btn-secondary{
+    background:#c250c1;
+}
+.btn-delete{
+    background: red;
+}
+.row{
+    display: flex;
+}
+.table{
+    max-width:98%;
+    overflow-x:auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+}
+table{
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+tbody{
+    color: #8b8b8b;
+}
+tr{
+    background: #fff;
+}
+tr:nth-child(even){
+    background: #f6f6f6;;
+}
+thead tr{
+    color: #fff;
+    background:#362f4b;
+}
+td,th{
+    padding: 10px 20px;
+}
+tr input{
+    width:100%;
+    color: #8b8b8b;
+    border: none;
+    background: transparent;
+}
+tr input:active{
+    border: none;
+}
+tr input:focus-visible{
+    outline: none;
+}
+.file{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+.file-input label {
+	  display: block;
+	  position: relative;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  cursor: pointer;
+	  transition: transform .2s ease-out;
+}
+#hidden{
+    display: none;
+}
+#loader {
+    display:none;
+    border: 5px solid #fff; 
+    border-top: 5px solid #362f4b; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media only screen and (max-width:632px){
+	  table{
+		  font-size:12px
+	  }
+} 
+  
